@@ -1,2 +1,5 @@
 # AgenciaRio
- 
+Este projeto é um exemplo de um site criado utilizando HTML e CSS, com o objetivo de construir uma interface harmoniosa e visualmente atraente. Durante o desenvolvimento, foram aplicadas novas técnicas e comandos, permitindo o aprimoramento das habilidades de desenvolvimento web. O site conta com um vídeo de fundo, que traz dinamismo à página inicial, e uma galeria de imagens acessível pela navegação, proporcionando uma experiência final agradável para o usuário.
+
+As principais tecnologias utilizadas no projeto foram HTML e CSS, além de recursos visuais, como imagens e vídeos. A estrutura do projeto é organizada da seguinte forma: o arquivo principal do site é o "index.html", enquanto o arquivo de estilos "styles.css" define a aparência do site. Os recursos de mídia, como as imagens e o vídeo de fundo, estão armazenados nas pastas "imagens/" e "videos/", respectivamente.
+Este projeto proporcionou uma excelente oportunidade para consolidar e expandir o conhecimento em HTML e CSS, resultando em um site funcional e visualmente atraente.
