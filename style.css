@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +6,17 @@
     box-sizing: border-box;
 }
 
-/* ajuste o plano de fundo */
+/* Ajuste do plano de fundo */
 .plano-de-fundo {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(imagens/praia.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../imagens/praia.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-/* ajuste a barra de navegaçao */
+/* Ajuste da barra de navegação */
 nav {
     position: absolute;
     top: 0;
@@ -27,7 +28,7 @@ nav {
     justify-content: space-between;
 }
 
-/* ajuste a barra de navegaçao (album) */
+/* Ajuste da barra de navegação (Album) */
 .navgaleria {
     position: sticky;
     left: 0;
@@ -37,20 +38,21 @@ nav {
     background-color: #999;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+
 }
 
 .navgaleria img {
     margin-top: 15px;
 }
 
-/* posicionamento do logo */
+/* Posicionamento do logo */
 nav .logo {
     width: 160px;
     cursor: pointer;
     margin-left: 40px;
 }
 
-/* ajuste da barra de navegaçao para ficar horizontal e remoçao dos amrcadores */
+/* Ajuste da barra de navegação para ficar na horizontal e remoção dos marcadores */
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -58,14 +60,16 @@ nav ul li {
     letter-spacing: 3px;
     margin-right: 40px;
 }
-
-/* ajuste dos links da barra de navegaçao */
+/* Ajuste dos links da barra de navegação */
 nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover {
     text-decoration: none;
     color: yellow;
 }
-
-/* configuraçao do titulo animado */
+/* Configuração do título animado */
 .titulo {
     position: absolute;
     top: 50%;
@@ -73,9 +77,10 @@ nav ul li a {
     transform: translate(-50%, -50%);
     font-size: 60px;
     color: white;
+
 }
 
-/* funcionalidade de destaque da palavra */
+/* Funcionalidade de destaque da palavra */
 span {
     color: transparent;
     background-image: linear-gradient(yellow, yellow);
@@ -86,13 +91,13 @@ span {
     animation: backcolor 3s linear infinite alternate;
 }
 
-/* __________ */
-/* Pagina rio de janeiro */
+/* ________________________ */
+/* Página Rio de janeiro */
 
 .plano-fundo {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
     position: relative;
     padding: 0 5%;
     display: flex;
@@ -111,19 +116,22 @@ span {
     justify-content: space-between;
 }
 
+.navrio .logo {
+    width: 20px;
+}
+
 .navrio ul li {
     list-style: none;
     display: inline-block;
     margin-left: 40px;
     text-transform: uppercase;
-    letter-spacing: 2px; /* define espaçamento entre as letras como 2px */
+    letter-spacing: 2px; /* Define o espaçamento entre as letras como 2px */
 }
 
 .navrio ul li a {
     text-decoration: none;
     color: #fff;
-    font-weight: 600;
-    transition: 0.5s;
+    font-size: 17px;
 }
 
 .conteudo {
@@ -137,10 +145,10 @@ span {
     transition: 0.5s;
 }
 
-/* define estilo aplicado a elemetos h1 dentro de .conteudo quando o mouse estiver em cima */
+/* Define o estilo aplicado a elementos <h1> dentro de .conteudo quando o mouse estiver em cima */
 .conteudo h1:hover {
-    -webkit-text-stroke: 2px #fff; /* adiciona um encontro de texto de 2px branco */
-    color: transparent; /* define cor do texto como transparente */
+    -webkit-text-stroke: 2px #fff; /* Adiciona um contorno de texto de 2px branco */
+    color: transparent; /* Define a cor do texto como transparente */
 }
 
 .conteudo a {
@@ -152,7 +160,6 @@ span {
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
-
 }
 
 .back-video {
@@ -162,68 +169,69 @@ span {
     z-index: -1;
 }
 
-/* cor de fundo pagina e cor da fonte */
-.bodycontato {
-    background: #999;
-    color: white;
-    font-weight: 400;
-    display: flex;
-    min-height: 100vh;
-    min-width: 100vw;
 
+/* Cor de fundo página e cor da fonte */
+.bodycontato {
+background: #999;
+color: white;
+font-weight: 400;
+display: flex; 
+min-height: 100vh;
+min-width: 100vw;
 }
 
 .contato {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+width: 50vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
 }
 
-/* __________ */
-/* album de fotos */
+/* _______________________ */
+/* Album de fotos (Galeria) */
 
 main#album {
-    /* renderiza os elementos */
+    /*Renderiza os elementos*/
     display: flex;
-
-    /* coloca o conteudo em linha e nao permite quebra de linha */
+    /*Coloca o conteúdo em linha e não permite a quebra de linha.*/
     flex-flow: row wrap;
 }
-section.coluna {
-    /* border 1px dashed black */
-    flex: 1 1 100%;
-    padding: 0px 5px;
 
+section.coluna {
+    border: 1px dashed black;
+    flex: 1 1 100%;
+    padding: 0px 5px; 
+  
 }
 
 section > img {
-    /* especifica a largura e a altura de uma imagem */
+    /* Especifica a largura e a altura de uma imagem*/
     width: 100%;
-
-    /* indica distancia na parte inferior do conteudo */
+    /*indica a distância na parte inferior do conteúdo*/
     padding-bottom: 10px;
     border-radius: 5px;
 }
 
-/* define o estilo aplicado a elementos .black-video quando a relaçao de aspecto minima for 16/9 */
+
+/* Define o estilo aplicado a elementos .back-video quando a relação de aspecto mínima for 16/9 */
 @media (min-aspect-radio: 16/9) {
     .back-video {
-        width: 100%; /* define a largura como 100% */
-        height: auto; /* autura altomatica*/   
-     }
+        width: 100%; /* Define a largura como 100% */
+        height: auto; /* Define a altura como automática */
+    }
 }
 
-/* define o estilo aplicado a elementos .black-video quando a relaçao de aspecto maxima for 16/9 */
+/* Define o estilo aplicado a elementos .back-video quando a relação de aspecto máxima for 16/9 */
 @media (max-aspect-radio: 16/9) {
     .back-video {
-        width: auto; /* define a largura como 100% */
-        height: 100%o; /* autura altomatica*/   
-     }
+        width: auto; /* Define a largura como automática */
+        height: 100%; /* Define a altura como 100% */
+    }
 }
 
-/* anima para aparecer */
+/* Anima para aparecer */
 @keyframes backcolor {
     100% {
         background-position: 0 0;
@@ -234,19 +242,19 @@ section > img {
     .titulo {
         font-size: 40px;
     }
-}
+ }
 
-/* __________ */
-/* responsividade (album de fotos) */
+/* _____________________ */
+/* Responsividade (Album de fotos) */
 
-/* tamanho de tablets */
-@media screen and (min-width: 768px) and (max-width: 992px){
+/* Tamanho de tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
     section.coluna {
         flex: 1 1 50%;
-     }
+    }
 }
 
-/* tamanho de celulares */
+/* Tamanho de celulares*/
 @media screen and (min-width: 992px) {
     section.coluna {
         flex: 1 1 25%;
